@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/colorWhite"
+    >
+    <include layout="@layout/tool_bar"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+        <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/boxshadow"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="211dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/globe3" />
+    </FrameLayout>
+</LinearLayout>

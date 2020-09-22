@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rightNav"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your location"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="285dp">
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical">-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/navRightUkLayout"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+        <!--                <ImageView-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:src="@drawable/uk_flag"/>-->
+        <!--                <TextView-->
+        <!--                    android:textColor="#ffffff"-->
+        <!--                    android:textAllCaps="true"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="united kingdom"-->
+        <!--                    />-->
+        <!--            </LinearLayout>-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/navRightFrLayout"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+        <!--                <ImageView-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:src="@drawable/fr_flag"/>-->
+        <!--                <TextView-->
+        <!--                    android:textColor="#ffffff"-->
+        <!--                    android:textAllCaps="true"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="France"-->
+        <!--                    />-->
+        <!--            </LinearLayout>-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/navRightUsLayout"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+        <!--                <ImageView-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:src="@drawable/usa_flag"/>-->
+        <!--                <TextView-->
+        <!--                    android:textColor="#ffffff"-->
+        <!--                    android:textAllCaps="true"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="united states"-->
+        <!--                    />-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serverListRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="391dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Premium Servers"
+                android:textAllCaps="true"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="-36dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_weight="10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/serverPremium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
